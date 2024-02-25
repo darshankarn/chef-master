@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import logo_img from '../assets/logo.jpg'
 import "../Styles/Navbar.css"
 import { RiHomeSmileLine } from "react-icons/ri";
-import { MdFavoriteBorder } from "react-icons/md";
+import { LiaBlogSolid } from "react-icons/lia";
 
 function Navbar() {
     return (
@@ -17,7 +17,7 @@ function Navbar() {
                     <Link to='/' className='link'><RiHomeSmileLine className='home_logo' /> Home</Link>
                 </li>
                 <li>
-                    <Link to='/Favorite' className='link'><MdFavoriteBorder className='fb_logo' /> Favorite</Link>
+                    <Link to='/Favorite' className='link'><LiaBlogSolid className='fb_logo' />Blog</Link>
                 </li>
             </ul>
         </div>

@@ -1,0 +1,98 @@
+.header{
+  background-image: url(https://images.unsplash.com/photo-1543339308-43e59d6b73a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-position-x: left;
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 8em;
+}
+.content{
+    text-wrap: wrap;
+    width: 32vw;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content h1{
+  margin-bottom: 2px;
+}
+
+.header-text h1{
+  margin-bottom: 2px;
+}
+
+.logo-wrapper{
+    width: 32vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-wrapper .logo_header .brand{
+    color: green;
+    width: 7.5em;
+    height: 7.5em;
+    border: 4px solid rgba(222, 20, 20, 0.762);
+    border-radius: 100%;
+}
+
+.header-text{
+    text-wrap: wrap;
+    width: 32vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Keyframes for the animation */
+@keyframes slideInFromLeft {
+    0% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Applying the animation to the heading */
+  .content h1 {
+    animation: slideInFromLeft 1.5s ease-out;
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes slideInFromRight {
+    0% { opacity: 0; transform: translateX(100%); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Applying the animation to the paragraph */
+  .content p {
+    animation: slideInFromRight 1.5s ease-out;
+  }
+
+/* Keyframes for the animation */
+@keyframes slideInFromTop {
+    0% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Applying the animation to the header text */
+  .header-text h1 {
+    animation: slideInFromTop 1.5s ease-out;
+  }
+
+/* Responsive CSS using media queries */
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      margin-top: 8em;
+      text-align: center;
+  }
+  
+  .content, .logo-wrapper, .header-text {
+      width: 80vw;
+      margin-bottom: 2em;
+  }
+}

@@ -4,19 +4,24 @@ import "../Styles/header.css"
 
 const Header = () => {
   return (
-    <header className='header' style={{ backgroundImage: `url(https://images.unsplash.com/photo-1543339308-43e59d6b73a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)` }}>
+    <header className='header'>
     <div className='layer'>
     <div className="container">
-      <nav className='logo-wrapper'>
-        <div className='logo'>
-          <ImSpoonKnife className='brand' />
-        </div>
-      </nav>
       <div className='header-text' >
         <h1>Recipe Finder</h1>
         <p>Let's make the food together...</p>
       </div>
-
+      <nav className='logo-wrapper'>
+        <div className='logo_header'>
+          <ImSpoonKnife className='brand' />
+        </div>
+      </nav>
+      <div className='content'>
+        <p>
+         <h1>Welcome to our Recipe <p>Finder!</p></h1>
+         Say goodbye to mealtime dilemmas and hello to flavor-packed adventures.
+        </p>
+      </div>
     </div>
     </div>
   </header>

@@ -1,0 +1,7 @@
+.home{
+    display: flex;
+    background-color: rgba(241, 232, 232, 0.953);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
